@@ -1,6 +1,9 @@
 # Cloud Cost Dashboard
 
-A serverless cloud cost dashboard that visualizes AWS spending trends, budget usage, and service-level costs. Built with React and deployed using AWS serverless services.
+A serverless cloud cost dashboard that visualizes AWS spending trends, budget usage, and service-level costs. Built with 
+React and deployed using AWS serverless services.
+
+<img width="1920" height="1008" alt="kpi-card" src="https://github.com/user-attachments/assets/58ce60e4-81bb-422e-97c5-09b46974f38d" />
 
 ---
 
@@ -63,14 +66,24 @@ Hosting:
 
 ## Screenshots
 
-Dashboard  
-AWS Setup
+
+<img width="1920" height="931" alt="potential-saving2" src="https://github.com/user-attachments/assets/f3347f00-66e0-4ce6-947e-421864c38a38" />
+
+
+
+
+
+
+<img width="1920" height="903" alt="Cost-by-services" src="https://github.com/user-attachments/assets/5ab1d67d-2ad0-4941-8336-f31ddc6f08f6" />
+
 
 ---
 
 ## API Endpoint
 
 GET /costs
+
+<img width="1920" height="1008" alt="api-gateway" src="https://github.com/user-attachments/assets/31e32a05-534a-4032-9986-953510d98f84" />
 
 ### Sample Response
 
