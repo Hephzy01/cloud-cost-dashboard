@@ -1,32 +1,167 @@
 # Cloud Cost Dashboard
 
-A serverless cloud cost monitoring dashboard built with React and AWS.
+A serverless cloud cost dashboard that visualizes AWS spending trends, budget usage, and service-level costs. Built with React and deployed using AWS serverless services.
+
+---
+
+## Overview
+
+This project shows how to build and deploy a full cloud-based application using a modern frontend and AWS backend services.
+
+It fetches cost data from a serverless API and displays:
+
+- Current spend  
+- Last month spend  
+- Remaining budget  
+- Daily cost trends  
+- Cost breakdown by service  
+- Budget usage alerts  
+
+---
 
 ## Architecture
 
-React (Vite) → S3 → API Gateway → Lambda
+Frontend (React + Vite)  
+↓  
+Amazon S3 (Static Hosting)  
+↓  
+Amazon API Gateway (REST API)  
+↓  
+AWS Lambda (Backend logic)  
+↓  
+JSON Data (mock cost data)
 
-## Features
-
-- Cost overview (current, last month, budget)
-- Daily spend trend (line chart)
-- Cost by service (bar chart)
-- Budget tracking and alerts
+---
 
 ## Tech Stack
 
-- React (Vite)
-- AWS S3 (static hosting)
-- AWS API Gateway
-- AWS Lambda
+Frontend:
+- React (Vite)  
+- Tailwind CSS  
+- Recharts  
 
-## Live Demo
+Backend:
+- AWS Lambda  
+- Amazon API Gateway  
 
-(Add your S3 URL here)
+Hosting:
+- Amazon S3  
+
+---
+
+## Features
+
+- Fetches data from API  
+- Cost KPI cards  
+- Daily spend line chart  
+- Service cost bar chart  
+- Budget usage tracker  
+- Budget alert (80% threshold)  
+- Responsive layout  
+
+---
+
+## Screenshots
+
+Dashboard  
+AWS Setup
+
+---
+
+## API Endpoint
+
+GET /costs
+
+### Sample Response
+
+{
+  "currentSpend": 125,
+  "lastMonth": 98,
+  "budget": 200,
+  "daily": [
+    { "date": "Mon", "cost": 10 },
+    { "date": "Tue", "cost": 15 }
+  ],
+  "services": [
+    { "service": "EC2", "cost": 60 },
+    { "service": "S3", "cost": 25 }
+  ]
+}
+
+---
 
 ## What I Learned
 
-- Building serverless APIs with Lambda
-- Integrating frontend with API Gateway
-- Handling CORS issues
-- Deploying frontend to S3
+- Built a serverless backend with AWS Lambda  
+- Created REST API using API Gateway  
+- Deployed frontend to S3  
+- Fixed CORS issues  
+- Understood build vs deployment (Vite → dist → S3)  
+- Debugged real integration issues  
+
+---
+
+## Challenges
+
+- CORS errors between S3 and API Gateway  
+- API connection debugging  
+- JSON response handling  
+- Deployment updates to S3  
+
+---
+
+## Project Structure
+
+cloud-cost-dashboard/
+- src/
+- public/
+- screenshots/
+- package.json
+- README.md
+
+---
+
+## Run Locally
+
+npm install  
+npm run dev  
+
+---
+
+## Build
+
+npm run build  
+
+Output goes to:
+
+dist/
+
+---
+
+## Deployment
+
+1. Build project  
+2. Upload dist/ to S3  
+3. Enable static hosting  
+4. Use S3 URL  
+
+---
+
+## Future Improvements
+
+- Connect real AWS billing data  
+- Add authentication  
+- Add date filtering  
+- Improve UI  
+
+---
+
+## Author
+
+Adeola Akinlade
+
+---
+
+## License
+
+For portfolio use
