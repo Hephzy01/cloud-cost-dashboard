@@ -3,8 +3,6 @@
 A serverless cloud cost dashboard that visualizes AWS spending trends, budget usage, and service-level costs. Built with 
 React and deployed using AWS serverless services.
 
-<img width="1920" height="1008" alt="kpi-card" src="https://github.com/user-attachments/assets/58ce60e4-81bb-422e-97c5-09b46974f38d" />
-
 ---
 
 ## Overview
@@ -66,44 +64,28 @@ Hosting:
 
 ## Screenshots
 
-
-<img width="1920" height="931" alt="potential-saving2" src="https://github.com/user-attachments/assets/f3347f00-66e0-4ce6-947e-421864c38a38" />
-
+### Cost KPI Cards
 
 
+<img width="1920" height="544" alt="kpi-card" src="https://github.com/user-attachments/assets/841b04b8-8f85-47fe-8af6-f4b78b638d56" />
 
+
+### Potential Saving
+
+<img width="1920" height="555" alt="potential-saving2" src="https://github.com/user-attachments/assets/4bfff6fc-1d0f-402f-812c-0b45476974e3" />
+
+### Daily Ppend trending
+
+<img width="1920" height="669" alt="daily-spend-trend" src="https://github.com/user-attachments/assets/44d3ff72-fecd-4ce8-8887-8a5b340f3e7d" />
 
 
 ## Cost by Services
 
-<img width="1920" height="903" alt="Cost-by-services" src="https://github.com/user-attachments/assets/5ab1d67d-2ad0-4941-8336-f31ddc6f08f6" />
+<img width="1920" height="641" alt="Cost-by-services" src="https://github.com/user-attachments/assets/f6b53017-d14f-4e01-933f-49da7cab4263" />
 
 
----
 
-## API Endpoint
 
-GET /costs
-
-<img width="1920" height="1008" alt="api-gateway" src="https://github.com/user-attachments/assets/31e32a05-534a-4032-9986-953510d98f84" />
-
-### Sample Response
-
-{
-  "currentSpend": 125,
-  "lastMonth": 98,
-  "budget": 200,
-  "daily": [
-    { "date": "Mon", "cost": 10 },
-    { "date": "Tue", "cost": 15 }
-  ],
-  "services": [
-    { "service": "EC2", "cost": 60 },
-    { "service": "S3", "cost": 25 }
-  ]
-}
-
----
 
 ## What I Learned
 
