@@ -84,8 +84,7 @@ Hosting:
 <img width="1920" height="641" alt="Cost-by-services" src="https://github.com/user-attachments/assets/f6b53017-d14f-4e01-933f-49da7cab4263" />
 
 
-
-
+---
 
 ## What I Learned
 
